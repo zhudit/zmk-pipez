@@ -1,0 +1,5 @@
+build:
+  depends:
+    - zmk-keyboard-caldera
+  settings:
+    board_root: .
