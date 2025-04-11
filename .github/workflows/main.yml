@@ -1,5 +1,13 @@
-on: [push, pull_request, workflow_dispatch]
-
-jobs:
-  build:
-    uses: /build.yaml
+     artifact-name: corne_left_with_studio
+ #
+ ---
+ include:
+   - board: nice_nano_v2
+     shield: corne_left
+   - board: nice_nano_v2
+     shield: corne_right
+ on: [push, pull_request, workflow_dispatch]
+ 
+ jobs:
+   build:
+     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
