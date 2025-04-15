@@ -1,4 +1,4 @@
-#include "caldera.dtsi"
+#include "caldera_right.dtsi"
 
 &default_transform { 
     col-offset = <6>;
